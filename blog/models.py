@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+#this creates the models for the blog app in the portfolio-project
 
 class Blog(models.Model):
     title = models.CharField(max_length=250)

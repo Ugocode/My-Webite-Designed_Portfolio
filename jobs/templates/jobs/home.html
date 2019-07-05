@@ -29,7 +29,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="http://instagram.com/ugobozz1/">Instagram </a>
+          <i class="fab fa-instagram">
+          <a class="nav-item nav-link" href="http://instagram.com/ugobozz1/">Instagram </a></i>
           <a class="nav-item nav-link" href=" {% static 'UgosCV.pdf' %}">Resume</a>
           <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
 
@@ -53,7 +54,7 @@
     </section>
 
 
-
+    <h1 class= 'text-center'> <font color="purple"> These are a few of my works, they are awsomely made with Passion </font></h1>
     <!--List of Jobs-->
 
     <div class="album py-5 bg-light">
@@ -69,21 +70,24 @@
                 <p class="card-text">{{ job.summary }}.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!--     <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                  <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                   </div>
-                  <small class="text-muted">{% now "m" %} mins</small>
+                <!--  <small class="text-muted">{% now "m" %} mins</small> -->
                 </div>
               </div>
             </div>
           </div>
         {% endfor %}
      </div>
-     <p class = 'text-center' > These are a few of my works that I have done, they are awsomely made with passion </p>
+     <p class = 'text-center' > I love Python and I love to create awesome stuff with it, to me its the best programming language in the world   </p>
    </div>
  </div>
 
+
   </main>
+
+</body>
 
 
 
@@ -92,7 +96,7 @@
       <p class="float-right">
         <a href="#">Back to top</a>
       </p>
-      <p>Made with Passion. All Rights Reserved &copy; Ugocode! {% now "M Y" %} </p>
+      <p>Made with Passion. All Rights Reserved &copy; Ugocode {% now "Y" %} </p>
 
     </div>
   </footer>
@@ -101,8 +105,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 
 
 

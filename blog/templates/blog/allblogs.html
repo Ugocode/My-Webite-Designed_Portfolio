@@ -55,11 +55,11 @@
         <img class = "img-fluid" "image-iframe" src= "{{ blog.image.url}}" height = 200 width= 200 />
         <br />
         <a href="{% url 'detail' blog.id %}"><h4>{{ blog.title }}</h4></a>
-        {{ blog.pub_date }}
-        <br/>
+      <!--  {{ blog.pub_date }} -->
+
         {{ blog.summary}}
         <br />
-
+        <br/>
         {% endfor%}
 
 
@@ -74,7 +74,7 @@
       <p class="float-right">
         <a href="#">Back to top</a>
       </p>
-      <p>Made with Passion. All Rights Reserved &copy; Ugocode! {% now "D M Y" %} </p>
+      <p>Made with Passion. All Rights Reserved &copy; Ugocode {% now "Y" %} </p>
 
     </div>
   </footer>
